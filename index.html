@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Daily Journal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 
+        CSS Link Needed to Use the "display: flex, and flex-direction: column CSS properties". -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/journal.css" />
+    <!-- 
+        Script Element Not Needed, Just Yet.
+        <script src="journal.js"></script> -->
+    
+</head>
+<body>
+    <h1>Daily Journal</h1>
+    <!-- Date of Entry Field -->
+    <form action="">
+        <fieldset>
+            <label for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+    <!-- Concepts Covered Field -->
+    <form action="">
+            <fieldset>
+                <label for="journalConcepts">Concepts Covered</label>
+                <input type="text" name="journalConcepts" id="journalConcepts">
+            </fieldset>
+    <!-- Journal Entry Field -->
+    <form action="">
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="entry" rows="2" id="journalEntry"></textarea>
+            </fieldset>
+    <!-- Mood for the Day Field -->
+    <form action="">
+            <fieldset>
+                <label for="journalMood">Journal Mood</label>
+                <select name="mood" id="journalMood">
+                        <option value="Sad">Sad</option>
+                        <option value="OK">OK</option>
+                        <option value="Happy">Happy</option>
+                      </select>
+            </fieldset>
+        <!-- Record Journal Entry 'Button' -->
+        <button type="button" onclick="alert('Test of Button Function')">Record Journal Entry</button>
+    </form>
+    <script src="journal.js"></script>
+</body>
+</html>
